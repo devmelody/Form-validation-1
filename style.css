@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: poppins, sans-serif;
+    font-size: 16px;
+    background-color: hsl(0, 100%, 74%);
+    background-image: url(images/bg-intro-desktop.png);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 4rem 7rem;
+    gap: 2rem;
+}
+
+
+
+.top-header {
+    background-color: hsl(248, 32%, 49%);
+    text-align: center;
+    padding: 0.8rem 1.5rem;
+    border-radius: 7px;
+    margin-bottom: 1rem;
+    
+}
+.top-header > p {
+    font-size: 0.8rem;
+    color: hsl(246, 25%, 77%);
+}
+.bold-text {
+    font-weight: 600;
+    color: white;  
+}
+
+.form-container {
+    background-color: white;
+    padding: 1.7rem;
+    border-radius: 7px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    
+}
+
+input, button {
+    width: 100%;
+    padding: 0.8rem;
+    margin: 0.5rem 0;
+    border: 1px solid hsl(246, 25%, 77%);
+    border-radius: 5px;
+    outline-color: hsl(249, 10%, 26%);
+    font-weight: 600;
+    outline-width: 0.5px;
+}
+input {
+    padding-right: 3rem;
+}
+
+.inputs {
+    margin-bottom: 1rem;
+    position: relative;
+}
+.error-icon {
+    display: none;
+    position: absolute;
+    top: 28%;
+    right: 1rem;
+    width: 20px;
+    height: 20px;
+    pointer-events: none;
+
+}
+.error-message {
+    display: none;
+    font-size: 10px;
+    font-weight: 600;
+    font-style: italic;
+    color: hsl(0, 100%, 74%);
+    text-align: right;
+    margin-bottom: 0.6rem;
+    margin-top: -0.2rem;
+}
+
+.btn {
+    background-color: hsl(154, 59%, 51%);
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+}
+.btn:hover {
+    background-color: green;
+}
+
+.light-text {
+    color: hsl(246, 25%, 77%);
+    text-align: center;
+    font-size: 12px;
+}
+.red-text {
+    color: hsl(0, 100%, 74%);
+    font-weight: 700;
+}
+
+/** JS classlist **/
+.input-error {
+    border: 1px solid hsl(0, 100%, 74%);
+}
+
+@media (max-width: 700px) {
+    body {
+        background-image: url(images/bg-intro-mobile.png);
+        padding: 2rem;
+    }
+    .container {
+        flex-direction: column;
+        text-align: center;
+        padding: 4vw;
+        gap: 1.5rem;
+        align-items: stretch;
+    }
+
+    .top-header {
+        margin-top: 2rem;
+        padding: 2rem 0.5rem;
+    }
+
+    .left-align > h1 {
+        margin-bottom: 1rem;
+        font-size: 1.5rem;
+
+    }
+
+    .left-align > p {
+    font-size: 0.9rem;
+        
+    }
+
+    .form-container {
+        padding: 2rem 1.5rem;
+        width: 100%;
+        max-width: 700px;
+        
+    }
+
+    input,
+    button {
+        padding: 0.9rem;
+        font-size: 1rem;
+    }
+
+}
